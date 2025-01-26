@@ -43,7 +43,7 @@ function App() {
     
     try {
       console.log("Sending POST request to backend...");
-      const response = await axios.post("http://127.0.0.1:8000/analyze", {
+      const response = await axios.post("https://ai-powered-portfolio-insights.onrender.com/analyze", {
         url: formattedUrl,
       });
       console.log("Response from backend:", response.data);
